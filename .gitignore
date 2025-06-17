@@ -1,2 +1,5 @@
 __pycache__
 setup.py
+build
+dist
+pytimerlib.egg-info
