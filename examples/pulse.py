@@ -1,5 +1,5 @@
 import pygame
-from pytimerlib import Timer
+from pytimerlib.pytimer import Timer
 
 pygame.init()
 screen = pygame.display.set_mode((500, 500))

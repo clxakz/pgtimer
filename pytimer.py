@@ -70,6 +70,10 @@ class __Timer():
 
     def get_easing_types(self):
         return list(_easing_functions.keys())
+    
+
+    def add_easing_type(self, name: str, function: Callable[[], None]):
+        _easing_functions[name] = function
 
     
     def after(self, delay: int, callback: Optional[Callable[[], None]] = None):
