@@ -1,1 +1,1 @@
-# PyTimer
+# PyTimer - A PyGame Timer Library
