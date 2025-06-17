@@ -15,8 +15,8 @@
 - [Documentation](#documentation)
     - [After](#afterdelay-callback)
     - [Tween](#tweenduration-start_value-end_value-on_update-easing-callback)
-    - [Easing types](#get_easing_types)
     - [Custom Easing type](#add_easing_typename-function)
+    - [Easing types](#get_easing_types)
 
 
 -----
