@@ -1,4 +1,4 @@
-# PyTimer - A PyGame Timer Library
+# PyTimer - A Simple PyGame Timer Library
 > A lightweight Python timer and tweening library insired by Love2D's [Hump](https://github.com/vrld/hump) library with built-in support for multiple easing functions from [pytweening](https://github.com/asweigart/pytweening), designed for easy time-based animations and delayed callbacks.
 
 -----
@@ -39,7 +39,7 @@ while running:
 
 # Create a pulsing rectangle
 As an example we can use tweens to pulse a rectangle on the screen
-See [pulsing.py](https://github.com/clxakz/pytimer/blob/main/examples/pulse.py) for full example
+See [pulse.py](https://github.com/clxakz/pytimer/blob/main/examples/pulse.py) for full example
 ```python
 surface = pygame.Surface((250, 250))
 surface.fill((255,255,255))
