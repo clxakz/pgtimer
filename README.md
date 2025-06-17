@@ -1,8 +1,10 @@
 <img src="assets/logo.png" alt="Alt text" width="1000" />
 
+
+[![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
 # PyTimer - A Simple PyGame Timer Library
 > A lightweight Python timer and tweening library insired by Love2D's [Hump](https://github.com/vrld/hump) library with built-in support for multiple easing functions from [pytweening](https://github.com/asweigart/pytweening), designed for easy time-based animations and delayed callbacks.
-
 -----
 
 <br/>
