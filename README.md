@@ -16,6 +16,7 @@
     - [After](#afterdelay-callback)
     - [Tween](#tweenduration-start_value-end_value-on_update-easing-callback)
     - [Easing types](#get_easing_types)
+    - [Custom Easing type](#add_easing_typename-function)
 
 
 -----
@@ -131,6 +132,25 @@ Arguments
 
 > [!TIP]
 > You can nest `after` and `tween` functions to build a sequence of animations
+
+<br/>
+
+-----
+
+### `.add_easing_type(name, function)`
+The `add_easing_type()` function can be used to add your own custom easing type
+```python
+def easeInCustom(t):
+    return math.pow(t, 3)
+
+Timer.add_easing_type("custom", easeInCustom)
+```
+
+Arguments
+- `name` `str` - The name of you custom easing type
+- `function` `callable` - The function for your custom easing type
+
+-----
 
 <br/>
 
