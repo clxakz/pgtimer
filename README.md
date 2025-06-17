@@ -7,9 +7,9 @@
 
 # Contents
 - [Instalation](#instalation)
-- [Quick start](#quickstart)
-    - [Updating the timer](#updatethetimer)
-    - [Creating a pulsing rectangle](#createapulsingrectangle)
+- [Quick start](#quick-start)
+    - [Updating the timer](#update-the-timer)
+    - [Creating a pulsing rectangle](#create-a-pulsing-rectangle)
 - [Documentation](#documentation)
     - [After](#afterdelay-callback)
     - [Tween](#tweenduration-start_value-end_value-on_update-easing-callback)
