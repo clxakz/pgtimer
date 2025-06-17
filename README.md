@@ -64,7 +64,7 @@ surface.set_alpha(alpha)
 screen.blit(surface, (125, 125))
 ```
 
-And that looks like
+And that looks like <br/>
 <img src="assets/demo.gif" alt="Alt text" width="500" />
 
 
