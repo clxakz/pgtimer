@@ -38,7 +38,7 @@ while running:
 ```
 
 # Create a pulsing rectangle
-As an example we can use tweens to pulse a rectangle on the screen
+As an example we can use tweens to pulse a rectangle on the screen <br/>
 See [pulse.py](https://github.com/clxakz/pytimer/blob/main/examples/pulse.py) for full example
 ```python
 surface = pygame.Surface((250, 250))
