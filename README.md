@@ -47,7 +47,7 @@ from pytimerlib import Timer
 # Update the Timer
 In your main loop update the `Timer` with delta time
 > [!NOTE]
-> There's no need to instantiate the timer using timer = Timer() since an instance is already created and exposed as Timer at the module level
+> There's no need to instantiate the timer using `timer = Timer()` since an instance is already created and exposed as Timer at the module level
 ```python
 while running:
     dt = clock.tick(60) / 1000
