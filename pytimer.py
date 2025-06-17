@@ -96,7 +96,7 @@ class __Timer():
         self.tweens.append(data)
 
 
-    def update(self, dt):
+    def update(self, dt: float):
         # Timers
         timers_to_remove = []
         for timer in self.timers:
