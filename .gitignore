@@ -3,3 +3,5 @@ setup.py
 build
 dist
 pytimerlib.egg-info
+.pypirc
+pytimerlib
