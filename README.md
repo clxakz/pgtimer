@@ -5,6 +5,21 @@
 
 <br/>
 
+# Contents
+- [Instalation](#instalation)
+- [Quick start](#quickstart)
+    - [Updating the timer](#updatethetimer)
+    - [Creating a pulsing rectangle](#createapulsingrectangle)
+- [Documentation](#documentation)
+    - [After](#afterdelay-callback)
+    - [Tween](#tweenduration-start_value-end_value-on_update-easing-callback)
+    - [Easing types](#geteasingtypes)
+
+
+-----
+
+<br/>
+
 # Instalation
 ```bash
 git clone https://github.com/clxakz/pytimer
