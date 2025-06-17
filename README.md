@@ -94,7 +94,7 @@ And that looks like <br/>
 ### `.after(delay, callback)`
 The `after()` function will run a callback function after a set time
 ```python
-Timer.after(1, lambda: print("Done!")) # <- Prints 'Done!' after 1 second
+Timer.after(1, print("Done!")) # <- Prints 'Done!' after 1 second
 ```
 
 Arguments
@@ -114,7 +114,7 @@ def set_value(value):
     global alpha
     alpha = value
 
-Timer.tween(1, 0, 255, set_value, "easeOutQuad", lambda: print("Done!")) # <- Smoothly animates alpha from 0 to 255 using the easeOutQuad easing type. Prints 'Done!' when finished.
+Timer.tween(1, 0, 255, set_value, "easeOutQuad", print("Done!")) # <- Smoothly animates alpha from 0 to 255 using the easeOutQuad easing type. Prints 'Done!' when finished.
 ```
 
 Arguments
