@@ -3,6 +3,8 @@
 
 -----
 
+<br/>
+
 # Instalation
 ```bash
 git clone https://github.com/clxakz/pytimer
@@ -12,7 +14,14 @@ or
 pip install pytimerlib
 ```
 
+<br/>
+
+> [!NOTE]
+> Using pip, the PyTimer library is renamed to pytimerlib, since pytimer is allready taken.
+
 -----
+
+<br/>
 
 # Quick start
 place the `pytimer` folder inside your project and import it
@@ -56,3 +65,88 @@ screen.blit(surface, (125, 125))
 ```
 
 And that looks like
+<img src="assets/demo.gif" alt="Alt text" width="500" />
+
+
+-----
+
+<br/>
+
+
+# Documentation
+### `.after(delay, callback)`
+The `after()` function will run a callback function after a set time
+```python
+Timer.after(1, lambda: print("Done!")) # <- Prints 'Done!' after 1 second
+```
+
+Arguments
+- `delay` `(int)` - Time in seconds
+- `callback` `(callable)` - An optional callback function, none by default
+
+-----
+
+<br/>
+
+### `.tween(duration, start_value, end_value, on_update, easing, callback)`
+The `tween()` function animates a value smoothly from `start_value` to `end_value` over `duration` seconds, calling `on_update(value)` each frame with the eased value. Supports custom easing types and an optional `callback` when complete
+```python
+alpha = 0
+
+def set_value(value):
+    global alpha
+    alpha = value
+
+Timer.tween(1, 0, 255, set_value, "easeOutQuad", lambda: print("Done!")) # <- Smoothly animates alpha from 0 to 255 using the easeOutQuad easing type. Prints 'Done!' when finished.
+```
+
+Arguments
+- `duration` `int` - Duration in seconds
+- `start_value` `int` - The start value
+- `end_value` `int` - The end value
+- `on_update` `callable` - Returns the updated value as float
+- `easing` `str` - Sets the easing type
+- `callback` `callable` - An optional callback function, none by default
+
+-----
+
+<br/>
+
+### `.get_easing_types()`
+The `get_easing_types()` function will print a full list of all available easing types
+```python
+Timer.get_easing_types()
+```
+
+You can use any of the following easing types in `.tween()`, thanks to [pytweening](https://github.com/asweigart/pytweening) for providing these:
+- linear
+- easeInQuad
+- easeOutQuad
+- easeInOutQuad
+- easeInCubic
+- easeOutCubic
+- easeInOutCubic
+- easeInQuart
+- easeOutQuart
+- easeInOutQuart
+- easeInQuint
+- easeOutQuint
+- easeInOutQuint
+- easeInSine
+- easeOutSine
+- easeInOutSine
+- easeInExpo
+- easeOutExpo
+- easeInOutExpo
+- easeInCirc
+- easeOutCirc
+- easeInOutCirc
+- easeInElastic
+- easeOutElastic
+- easeInOutElastic
+- easeInBack
+- easeOutBack
+- easeInOutBack
+- easeInBounce
+- easeOutBounce
+- easeInOutBounce
