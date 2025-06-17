@@ -5,3 +5,4 @@ dist
 pytimerlib.egg-info
 .pypirc
 pytimerlib
+upload.py
