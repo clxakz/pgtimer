@@ -32,7 +32,7 @@ pip install pytimerlib
 <br/>
 
 > [!NOTE]
-> Using pip, the PyTimer library is renamed to pytimerlib, since pytimer is allready taken.
+> Using pip, the PyTimer library is renamed to pytimerlib, since pytimer is allready taken
 
 -----
 
@@ -124,6 +124,9 @@ Arguments
 - `callback` `callable` - An optional callback function, none by default
 
 -----
+
+> [!TIP]
+> You can nest `after` and `tween` functions to build a sequence of animations
 
 <br/>
 
