@@ -2,7 +2,7 @@ __pycache__
 setup.py
 build
 dist
-pytimerlib.egg-info
+pgtimer.egg-info
 .pypirc
 pytimerlib
 upload.py

@@ -14,6 +14,7 @@
 - [Quick start](#quick-start)
     - [Updating the timer](#update-the-timer)
     - [Creating a pulsing rectangle](#create-a-pulsing-rectangle)
+- [Examples](#examples)
 - [Documentation](#documentation)
     - [After](#afterdelay-callback)
     - [Tween](#tweenduration-start_value-end_value-on_update-easing-callback)
@@ -84,6 +85,39 @@ screen.blit(surface, (125, 125))
 And that looks like <br/>
 <img src="assets/demo.gif" alt="Alt text" width="500" />
 
+
+-----
+
+<br/>
+
+# Examples
+Animation example #1
+```python
+class Cube():
+    def __init__(self, x, y):
+        self.surface = pygame.Surface((100,100))
+        self.surface.fill((255,255,255))
+
+        self.rect = self.surface.get_frect(center=(x, y))
+
+    def draw(self, screen: pygame.Surface):
+        screen.blit(self.surface, self.rect)
+
+cube = Cube(100, 100)
+
+
+def animate():
+    Timer.tween(1, cube.rect.centerx, 400, lambda v: setattr(cube.rect, "centerx", v), "easeInOutQuad", lambda:             # Tween x position from 100 > 400
+        Timer.tween(1, cube.rect.centery, 400, lambda v: setattr(cube.rect, "centery", v), "easeInOutQuad", lambda:         # Tween y position from 100 > 400
+            Timer.tween(1, cube.rect.centerx, 100, lambda v: setattr(cube.rect, "centerx", v), "easeInOutQuad", lambda:     # Tween x position from 400 > 100
+                Timer.tween(1, cube.rect.centery, 100, lambda v: setattr(cube.rect, "centery", v), "easeInOutQuad", animate # Tween y position from 400 > 100 and repeat
+                )
+            )
+        )
+    )
+```
+And that looks like <br/>
+<img src="assets/demo2.gif" alt="Alt text" width="500" />
 
 -----
 
