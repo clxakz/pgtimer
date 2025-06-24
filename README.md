@@ -3,7 +3,7 @@
 
 [![Licence](https://img.shields.io/github/license/Ileriayo/markdown-badges?style=for-the-badge)](./LICENSE) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 
-# PyTimer - A Simple PyGame Timer Library
+# PgTimer - A Simple PyGame Timer Library
 > A lightweight Python timer and tweening library insired by Love2D's [Hump](https://github.com/vrld/hump) library with built-in support for multiple easing functions from [pytweening](https://github.com/asweigart/pytweening), designed for easy time-based animations and delayed callbacks.
 -----
 
@@ -27,26 +27,21 @@
 
 # Instalation
 ```bash
-git clone https://github.com/clxakz/pytimer
+git clone https://github.com/clxakz/pgtimer
 ```
 or
 ```bash
-pip install pytimerlib
+pip install pgtimer
 ```
-
-<br/>
-
-> [!NOTE]
-> Using pip, the PyTimer library is renamed to pytimerlib, since pytimer is allready taken
 
 -----
 
 <br/>
 
 # Quick start
-place the `pytimer` folder inside your project and import it
+place the `pgtimer` folder inside your project and import it
 ```python
-from pytimerlib import Timer
+from pgtimer import Timer
 ```
 
 # Update the Timer
@@ -61,7 +56,7 @@ while running:
 
 # Create a pulsing rectangle
 As an example we can use tweens to pulse a rectangle on the screen <br/>
-See [pulse.py](https://github.com/clxakz/pytimer/blob/main/examples/pulse.py) for full example
+See [pulse.py](https://github.com/clxakz/pgtimer/blob/main/examples/pulse.py) for full example
 ```python
 surface = pygame.Surface((250, 250))
 surface.fill((255,255,255))
